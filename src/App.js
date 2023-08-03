@@ -2,31 +2,23 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Tabs, Tab } from 'react-bootstrap';
-
-
 import Contact from './components/Contact';
 import Introduction from './components/Introduction';
 import JoinMethod from './components/JoinMethod';
 import Rules from './components/Rules';
-
-
-
-
+import mainlogo from './test.jpg';
 function App() {
   return (
     <div className="container mt-5">
       {/* 로고 */}
       <div className="d-flex align-items-center mb-4">
-        <img
-          src="/test.jpg"
+      <img src={mainlogo}
           alt="My Club Logo"
           height="50"
           className="me-2"
         />
         <h1>[] 지사</h1>
       </div>
-
-
 
 {/* Contact, Events, Introduction, JoinMethod, News, Rules */}
       {/* 메뉴 */}
