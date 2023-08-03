@@ -1,0 +1,51 @@
+import React from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Tabs, Tab } from 'react-bootstrap';
+
+
+import Contact from './components/Contact';
+import Introduction from './components/Introduction';
+import JoinMethod from './components/JoinMethod';
+import Rules from './components/Rules';
+
+
+
+
+function App() {
+  return (
+    <div className="container mt-5">
+      {/* 로고 */}
+      <div className="d-flex align-items-center mb-4">
+        <img
+          src="/test.jpg"
+          alt="My Club Logo"
+          height="50"
+          className="me-2"
+        />
+        <h1>[] 지사</h1>
+      </div>
+
+
+
+{/* Contact, Events, Introduction, JoinMethod, News, Rules */}
+      {/* 메뉴 */}
+      <Tabs defaultActiveKey="Introduction" id="club-tabs">
+        <Tab eventKey="Introduction" title="소개">
+          <Introduction />
+        </Tab>
+        <Tab eventKey="Rules" title="회칙">
+          <Rules />
+        </Tab>
+        <Tab eventKey="JoinMethod" title="가입 방법">
+          <JoinMethod />
+        </Tab>
+        <Tab eventKey="Contact" title="연락 방법">
+          <Contact />
+        </Tab>
+      </Tabs>
+    </div>
+  );
+}
+
+export default App;
