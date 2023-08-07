@@ -5,7 +5,8 @@ const Contact = () => {
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">연락 방법</h5>
-        <p className="card-text">연락 방법 안내</p>
+        <p className="card-text">이메일: mancitymcs@gmail.com <br></br>
+        인스타그램: https://www.instagram.com/mancity_mcs/ </p>
       </div>
     </div>
   );
