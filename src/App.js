@@ -17,7 +17,7 @@ function App() {
           height="50"
           className="me-2"
         />
-        <h1>[] 지사</h1>
+        <h1>맨체스터시티 OSC MCS</h1>
       </div>
 
 {/* Contact, Events, Introduction, JoinMethod, News, Rules */}
