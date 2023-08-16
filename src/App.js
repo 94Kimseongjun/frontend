@@ -6,7 +6,11 @@ import Contact from './components/Contact';
 import Introduction from './components/Introduction';
 import JoinMethod from './components/JoinMethod';
 import Rules from './components/Rules';
+
 import mainlogo from './test.jpg';
+
+//import Chatbot from './components/Chatbot'; // Chatbot 컴포넌트 임포트
+
 function App() {
   return (
     <div className="container mt-5">
@@ -36,6 +40,8 @@ function App() {
           <Contact />
         </Tab>
       </Tabs>
+
+    {/*  <Chatbot /> */}
     </div>
   );
 }
